@@ -48,8 +48,8 @@ def get_proxies_num(cls_num_list):
     max_m = (max(cls_num_list) / min(cls_num_list))//10+2
     m_list = (m_list * max_m) / max(m_list)
     #first stage results
-    m_d_18=[6.679798951,1.497479554,2.523514767,7.265641608,7.83,0.657605222,0.601407072]
-    m_d_19=[7.39,1.189864517,4.396462161,1.958290962,3.855176286,0.744683868,3.981275008,1.203736577]
+    m_d_18=[1,2,3,4,5,6,7] #the pretraining results of ISIC2018
+    m_d_19=[1,2,3,4,5,6,7,8] #the pretraining results of ISIC2019
     m_list = m_list+[int(x /4) for x in m_d_18]
     m_list = np.ceil(m_list).astype(np.int)
     print(m_list)
